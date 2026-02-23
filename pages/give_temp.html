@@ -119,26 +119,28 @@
         }
 
         .giving-tiers {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.25rem;
             margin-top: 1.5rem;
         }
 
         .giving-tier {
             background: white;
             border: 1px solid var(--border-light);
-            border-radius: 8px;
-            padding: 1.75rem 2rem;
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
             display: flex;
             align-items: flex-start;
-            gap: 2rem;
+            gap: 1rem;
             transition: all 0.3s ease;
+            cursor: pointer;
         }
 
         .giving-tier:hover {
             border-color: var(--sky-blue);
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            transform: translateY(-2px);
         }
 
         .giving-tier.featured {
@@ -146,31 +148,43 @@
             background: linear-gradient(135deg, #f8fbfd 0%, #ffffff 100%);
         }
 
-        .tier-amount {
-            font-size: 1.4rem;
-            font-weight: 600;
-            color: var(--sky-blue);
-            min-width: 140px;
+        .tier-icon {
+            font-size: 2rem;
             flex-shrink: 0;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #e8f4f8 0%, #f0f7fa 100%);
+            border-radius: 10px;
         }
 
         .tier-content {
             flex: 1;
+            min-width: 0;
+        }
+
+        .tier-amount {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--sky-blue);
+            margin-bottom: 0.25rem;
         }
 
         .tier-name {
-            font-size: 1.1rem;
+            font-size: 0.95rem;
             font-weight: 600;
             color: var(--text-primary);
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.3px;
         }
 
         .tier-description {
-            font-size: 0.95rem;
+            font-size: 0.85rem;
             color: var(--text-secondary);
-            line-height: 1.7;
+            line-height: 1.5;
         }
 
         .contact-box {
@@ -204,6 +218,12 @@
             text-decoration: underline;
         }
 
+        @media (max-width: 900px) {
+            .giving-tiers {
+                grid-template-columns: 1fr;
+            }
+        }
+
         @media (max-width: 768px) {
             .give-hero .tagline {
                 font-size: 1.25rem;
@@ -211,15 +231,6 @@
 
             .giving-methods {
                 grid-template-columns: 1fr;
-            }
-
-            .giving-tier {
-                flex-direction: column;
-                gap: 0.75rem;
-            }
-
-            .tier-amount {
-                min-width: auto;
             }
         }
     </style>
@@ -261,7 +272,7 @@
                 <div class="give-hero">
                     <p class="tagline">Accelerating Scientific Discovery Through AI</p>
                     <p class="description">
-                        Your support enables us to push the boundaries of AI-powered research, from understanding the human brain to modeling complex biological systems. Together, we can transform how science is done and make discoveries that benefit humanity.
+                        Your support enables us to push the boundaries of AI-powered research, from understanding the human brain to modeling complex biological systems. Contributions to REAL AI directly fund cutting-edge research, train the next generation of scientists, and help us build AI-powered digital twins of complex systems—from the brain to the pancreas to the universe. Together, we can transform how science is done and make discoveries that benefit humanity.
                     </p>
                     <div style="text-align: center; margin-top: 2rem;">
                         <a href="https://give.ucsb.edu/real-ai" target="_blank" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2.5rem;">Give Today</a>
@@ -272,88 +283,75 @@
                     <h2 class="give-section-title">Support Our Scientific Revolution at REAL AI</h2>
                     <div class="giving-tiers">
                         <div class="giving-tier">
-                            <div class="tier-amount">$20,000</div>
+                            <div class="tier-icon">✈️</div>
                             <div class="tier-content">
+                                <div class="tier-amount">$20,000</div>
                                 <div class="tier-name">Friend of REAL AI</div>
                                 <p class="tier-description">Enables sponsorship of a student research travel award, covering conference participation or industry visit for one UCSB AI student.</p>
                             </div>
                         </div>
 
                         <div class="giving-tier">
-                            <div class="tier-amount">$50,000</div>
+                            <div class="tier-icon">👩‍💻</div>
                             <div class="tier-content">
+                                <div class="tier-amount">$50,000</div>
                                 <div class="tier-name">Outreach Expansion Partner</div>
-                                <p class="tier-description">Expands the Girls' AI Bootcamp by supporting additional student cohorts, instructional staff, and curriculum development, broadening access to high-quality AI education for young women.</p>
+                                <p class="tier-description">Expands the Girls' AI Bootcamp by supporting additional student cohorts, instructional staff, and curriculum development.</p>
                             </div>
                         </div>
 
                         <div class="giving-tier">
-                            <div class="tier-amount">$100,000</div>
+                            <div class="tier-icon">🖥️</div>
                             <div class="tier-content">
+                                <div class="tier-amount">$100,000</div>
                                 <div class="tier-name">Research Accelerator</div>
-                                <p class="tier-description">Funds a major upgrade to REAL AI's research compute infrastructure, providing high-performance GPUs, storage, and cloud credits to accelerate data-intensive AI research across multiple student projects.</p>
+                                <p class="tier-description">Funds a major upgrade to REAL AI's research compute infrastructure with high-performance GPUs, storage, and cloud credits.</p>
                             </div>
                         </div>
 
                         <div class="giving-tier">
-                            <div class="tier-amount">$200,000</div>
+                            <div class="tier-icon">🎓</div>
                             <div class="tier-content">
+                                <div class="tier-amount">$200,000</div>
                                 <div class="tier-name">Fellowship Foundership</div>
                                 <p class="tier-description">Endows a REAL AI PhD Fellowship in your name for two consecutive years of doctoral support.</p>
                             </div>
                         </div>
 
                         <div class="giving-tier featured">
-                            <div class="tier-amount">$500,000</div>
+                            <div class="tier-icon">🌱</div>
                             <div class="tier-content">
+                                <div class="tier-amount">$500,000</div>
                                 <div class="tier-name">Impact Investor</div>
                                 <p class="tier-description">Establishes a named AI Research Seed Fund to catalyze multiple early-stage student and faculty projects.</p>
                             </div>
                         </div>
 
                         <div class="giving-tier">
-                            <div class="tier-amount">$1,000,000</div>
+                            <div class="tier-icon">🌐</div>
                             <div class="tier-content">
+                                <div class="tier-amount">$1,000,000</div>
                                 <div class="tier-name">Expansion Accelerator</div>
-                                <p class="tier-description">Establishes the REAL AI Visiting Scholars Program, enabling the Institute to host leading AI researchers from academia, national labs, and industry for extended residencies that catalyze new collaborations and research directions.</p>
+                                <p class="tier-description">Establishes the REAL AI Visiting Scholars Program for leading AI researchers from academia, labs, and industry.</p>
                             </div>
                         </div>
 
                         <div class="giving-tier">
-                            <div class="tier-amount">$5,000,000</div>
+                            <div class="tier-icon">👨‍🏫</div>
                             <div class="tier-content">
+                                <div class="tier-amount">$5,000,000</div>
                                 <div class="tier-name">Chaired Professorship</div>
                                 <p class="tier-description">Endows a Chaired Professorship in AI — securing faculty leadership and research excellence in perpetuity.</p>
                             </div>
                         </div>
 
                         <div class="giving-tier featured">
-                            <div class="tier-amount">$10,000,000</div>
+                            <div class="tier-icon">🏛️</div>
                             <div class="tier-content">
+                                <div class="tier-amount">$10,000,000</div>
                                 <div class="tier-name">Institutional Founding Partner</div>
-                                <p class="tier-description">Establishes a long-term Center for REAL AI at University of California, Santa Barbara, positioning UCSB as a global leader in AI-for-Science research.</p>
+                                <p class="tier-description">Establishes a long-term Center for REAL AI at UCSB, positioning it as a global leader in AI-for-Science research.</p>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="give-section">
-                    <h2 class="give-section-title">Your Impact</h2>
-                    <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.7;">
-                        Contributions to REAL AI directly fund cutting-edge research and support the next generation of scientists. Your generosity helps us:
-                    </p>
-                    <div class="impact-grid">
-                        <div class="impact-card">
-                            <h3>Advance Research</h3>
-                            <p>Fund pioneering projects in neuroscience, healthcare AI, and geometric deep learning that address critical scientific challenges.</p>
-                        </div>
-                        <div class="impact-card">
-                            <h3>Train Future Scientists</h3>
-                            <p>Provide fellowships and research opportunities for graduate students and postdoctoral researchers pursuing careers in AI for science.</p>
-                        </div>
-                        <div class="impact-card">
-                            <h3>Build Digital Twins</h3>
-                            <p>Support the development of AI-powered digital twins of complex systems—from the brain to the pancreas to the universe.</p>
                         </div>
                     </div>
                 </div>
