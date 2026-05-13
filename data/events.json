@@ -4,14 +4,16 @@
         "speaker": "Brian Giera",
         "affiliation": "Lawrence Livermore National Laboratory",
         "date": "2026-04-24",
-        "image": "brian_giera.jpg"
+        "image": "brian_giera.jpg",
+        "youtube_url": "https://youtu.be/wSLawZ4iypU"
     },
     {
-        "title": "Leveraging AI and GIS for better bike data!",
+        "title": "Bike Data: GeoAI For the Win",
         "speaker": "Trisalyn Nelson",
         "affiliation": "Department of Geography, UCSB",
         "date": "2026-03-13",
-        "image": "trisalyn_nelson.jpg"
+        "image": "trisalyn_nelson.jpg",
+        "youtube_url": "https://youtu.be/XH9t6br8I5k"
     },
     {
         "title": "Speaking the Neural Code",
@@ -39,7 +41,8 @@
         "speaker": "Igor Mezić",
         "affiliation": "Department of Mechanical Engineering, UCSB",
         "date": "2026-02-06",
-        "image": "igor_mezi.jpg"
+        "image": "igor_mezi.jpg",
+        "youtube_url": "https://youtu.be/MFY5S-fC69o"
     },
     {
         "title": "Vector Search: High-Throughput and Robust Query Processing and Modern Benchmarks",
@@ -49,18 +52,20 @@
         "image": "teemu_roos.webp"
     },
     {
-        "title": "Reliable and Efficient AI for Robotics",
+        "title": "Beyond Scale Structured Foundation Models for Embodied Intelligence",
         "speaker": "Christian Shewmake",
         "affiliation": "New Theory",
         "date": "2025-11-14",
-        "image": "christian_shewmake.webp"
+        "image": "christian_shewmake.webp",
+        "youtube_url": "https://youtu.be/XMI-TmOl-Q8"
     },
     {
         "title": "Learning Cellular Dynamics through Neural and Geometric Models",
         "speaker": "Wenjun Zhao",
         "affiliation": "Department of Mathematics, Wake Forest University",
         "date": "2025-11-07",
-        "image": "wenjun_zhao.webp"
+        "image": "wenjun_zhao.webp",
+        "youtube_url": "https://youtu.be/sHvxj1t7E_8"
     },
     {
         "title": "Predictive Navigation Emerges from Real and Artificial Neural Networks",
@@ -74,7 +79,8 @@
         "speaker": "Alex Franks",
         "affiliation": "Department of Statistics and Applied Probability, UCSB",
         "date": "2025-10-03",
-        "image": "alex_franks.jpg"
+        "image": "alex_franks.jpg",
+        "youtube_url": "https://youtu.be/oLjfwzRL-NI"
     },
     {
         "title": "When AI Meets the Web: Prompt Injection Risks",
