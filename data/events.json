@@ -1,5 +1,12 @@
 [
     {
+        "title": "When and How Do GNNs Learn Generalizable Algorithmic Procedure",
+        "speaker": "Yusu Wang",
+        "affiliation": "Department of Data Science, University of California, San Diego",
+        "date": "2026-05-29",
+        "image": "yusu_wang.jpg"
+    },
+    {
         "title": "To Graph or Not to Graph: When GNNs Help, When They Fail, and Why",
         "speaker": "Claire Donnat",
         "affiliation": "Department of Statistics, University of Chicago",
