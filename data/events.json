@@ -1,5 +1,27 @@
 [
     {
+        "title": "When and How Do GNNs Learn Generalizable Algorithmic Procedure",
+        "speaker": "Yusu Wang",
+        "affiliation": "Department of Data Science, University of California, San Diego",
+        "date": "2026-05-29",
+        "image": "yusu_wang.jpg"
+    },
+    {
+        "title": "To Graph or Not to Graph: When GNNs Help, When They Fail, and Why",
+        "speaker": "Claire Donnat",
+        "affiliation": "Department of Statistics, University of Chicago",
+        "date": "2026-05-22",
+        "image": "claire_donnat.jpg",
+        "youtube_url": "https://youtu.be/pmd0bIS-co0"
+    },
+    {
+        "title": "Sample-Efficient Personalizable Preference Learning",
+        "speaker": "Ramya Korlakai Vinayak",
+        "affiliation": "Department of Electrical and Computer Engineering, University of Wisoconson-Madison",
+        "date": "2026-05-19",
+        "image": "ramya_korlakai_vinayak.jpg"
+    },
+    {
         "title": "Digital Twins for Inspection of Direct Ink Write Additive Manufacturing",
         "speaker": "Brian Giera",
         "affiliation": "Lawrence Livermore National Laboratory",
